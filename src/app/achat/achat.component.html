@@ -1,0 +1,128 @@
+<!-- component1 -->
+<div class="container1 d-flex justify-content-center align-items-center">
+  <div class="partie1 d-flex align-items-center  ">
+    <div class="p1">
+      <div class="img0" >
+        <img [src]="url" alt="Erreur" >
+      </div>
+      <div class="img1 ">
+        <img src="../../assets/products/f1.jpg" h1="../../assets/products/f1.jpg" alt="Erreur" (click)="push1()">
+      </div>
+      <div class="img2 ">
+        <img src="../../assets/products/f2.jpg" h2="../../assets/products/f2.jpg" alt="Erreur" (click)="push2()" >
+      </div>
+      <div class="img3">
+        <img src="../../assets/products/f3.jpg" h3="../../assets/products/f3.jpg" alt="Erreur" (click)="push3()" >
+      </div>
+      <div class="img4">
+
+    <img src="../../assets/products/f4.jpg" h4="../../assets/products/f4.jpg" alt="Erreur" (click)="push4()">
+      </div>
+    </div>
+    <div class="p2 d-flex ">
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#" routerLink="/home">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">LT-Shirt</li>
+        </ol>
+      </nav>
+      <h3>Men's Fashion T Shirt</h3>
+      <h2> {{ 139 | currency:'USD':'symbol':'1.0-0' }}.00</h2>
+      <select class="form-select" id="clothingSize" required>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="xlarge">X-Large</option>
+      </select>
+      <div class="but_input d-flex">
+        <input type="number" name="quantity" min="0" max="100" step="1" class="d-flex justify-content-center align-items-center">
+        <div class="btn btn-success d-flex justify-content-center align-items-center">
+          Add To Cart
+        </div>
+      </div>
+      <h3>Product Details</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque temporibus, commodi quam a nulla impedit ipsam harum aliquid doloribus quasi, earum totam autem voluptatem dolore, vero nostrum placeat enim beatae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat in nostrum itaque est repellat dolor?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sit, a praesentium accusantium modi porro quo quaerat amet repudiandae dolorem at laboriosam quisquam tempore, totam, iste expedita nihil eos beatae.</p>
+    </div>
+  </div>
+</div>
+<!-- component2 -->
+<div class="titre1 d-flex align-items-center justify-content-center ">
+  <h1 class="text-center">Featured Products</h1>
+  <p class="text-center">Summer Collection New Modern Design</p>
+</div>
+<div class="container3 d-flex justify-content-center align-items-center">
+  <div class="partie3">
+    <div class="card">
+      <img src="../../assets/products/f5.jpg" class="card-img-top" alt="Erreur">
+      <div class="card-body">
+        <p>adidas</p>
+        <h1>Cartoon Astronaut T-Shirts</h1>
+        <div class="rating">
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+      </div>
+      <div class="e1 d-flex align-items-center ">
+        <p class="e">$78</p>
+        <i class="fa-solid fa-cart-shopping" routerLink="/achat" (click)="push()"></i>
+      </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../../assets/products/f6.jpg" class="card-img-top" alt="Erreur">
+      <div class="card-body">
+        <p>adidas</p>
+        <h1>Cartoon Astronaut T-Shirts</h1>
+        <div class="rating">
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+      </div>
+      <div class="e1 d-flex align-items-center ">
+        <p class="e">$78</p>
+        <i class="fa-solid fa-cart-shopping" routerLink="/achat" (click)="push()"></i>
+      </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../../assets/products/f7.jpg" class="card-img-top" alt="Erreur">
+      <div class="card-body">
+        <p>adidas</p>
+        <h1>Cartoon Astronaut T-Shirts</h1>
+        <div class="rating">
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+      </div>
+      <div class="e1 d-flex align-items-center ">
+        <p class="e">$78</p>
+        <i class="fa-solid fa-cart-shopping" routerLink="/achat" (click)="push()"></i>
+      </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../../assets/products/f8.jpg" class="card-img-top" alt="Erreur">
+      <div class="card-body">
+        <p >adidas</p>
+        <h1>Cartoon Astronaut T-Shirts</h1>
+        <div class="rating">
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+      </div>
+      <div class="e1 d-flex align-items-center ">
+        <p class="e">$78</p>
+        <i class="fa-solid fa-cart-shopping" routerLink="/achat" (click)="push()"></i>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,121 @@
+*
+{
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.partie1{
+  background-image: url('../../assets/b1.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 20px;
+}
+.partie1 h1{
+  font-size: 60px;
+}
+.partie1 p{
+  font-size: 28px;
+}
+.container3{
+  width: 100%;
+  height:fit-content;
+  margin-bottom: 70px;
+}
+.container3 .partie3{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr  ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  height: 100%;
+  gap: 30px;
+}
+.partie3 .card{
+  border-radius: 10px;
+}
+.partie3 .card img{
+  height:240px;
+  margin:4%;
+  width:92%;
+  border-radius: 10px;
+}
+.partie3 .card .rating span {
+color: gold;
+}
+.partie3 .card h1{
+  font-size: 18px;
+  font-weight: bolder;
+}
+ .e{
+  font-size: 18px;
+  color: green;
+  font-weight: bolder;
+}
+.partie3 .card .card-body{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.e1{
+  width:100%;
+  justify-content: space-between;
+}
+.e1 i{
+  color: green;
+  border-radius: 20px;
+  background-color: greenyellow;
+  padding:10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+nav
+{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width:250px;
+  height: 50px;
+}
+nav ul{
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 2fr;
+}
+nav li{
+  height: 50px;
+  cursor: pointer;
+}
+@media screen and (max-width:768px) and (min-width:300px){
+ *{
+    max-width: 100%;
+  }
+  .container3 .partie3{
+  grid-template-rows: repeat(1fr,32);
+  grid-template-columns: 1fr;
+}
+.partie1{
+background-size: cover;
+height: 300px;
+}
+.partie1 h1{
+  font-size: 40px;
+}
+.partie1 p{
+  font-size: 20px;
+  text-align: center;
+}
+}
+@media screen and (max-width:1240px) and (min-width:769px) {
+  .container3 .partie3{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .partie1{
+    background-size: cover;
+  }
+  }

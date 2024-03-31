@@ -1,0 +1,96 @@
+<div class="partie1">
+  <h1 id="h1">#let's_talk</h1>
+  <p>LEAVE A MESSAGE.We love to hear from you!</p>
+</div>
+<!-- component2 -->
+<div class="container2 d-flex justify-content-center align-items-center">
+  <div class="partie2 d-flex">
+    <div class="p21">
+  <p>GET IN TOUCH</p>
+  <h1>Visit one of our agency locations <br>or contact us today</h1>
+  <h3>Head office</h3>
+  <div class="pp">
+    <i class="fa-solid fa-map"></i>
+    <span>56 glassford Street Glasgow GI IUL New York</span>
+  </div>
+  <div class="pp">
+    <i class="fa-solid fa-message"></i>
+    <span>contact@example.com</span>
+  </div>
+  <div class="pp">
+    <i class="fa-solid fa-phone"></i>
+    <span>contact@example.com</span>
+  </div>
+  <div class="pp">
+    <i class="fa-solid fa-clock"></i>
+    <span>Monday to saturday 9.00am to 16.pm</span>
+  </div>
+    </div>
+    <div class="p22">
+      <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39500.67672674999!2d-1.4193104315643779!3d51.77340419123661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876cf3b04290bbf%3A0x1866138ca5e97986!2sE-Commerce%20House%2C%20Eynsham%2C%20Oakfield%20Industrial%20Estate%2C%20Witney%20OX29%204AG%2C%20Royaume-Uni!5e0!3m2!1sfr!2stn!4v1692973949178!5m2!1sfr!2stn" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+<!-- component3 -->
+<div class="container3 d-flex justify-content-center align-items-center">
+  <div class="partie3 d-flex align-items-center">
+    <form #f="ngForm" (ngSubmit)="print(f)" class="p31 ">
+      <p>LEAVE A MESSAGE</p>
+      <h1>We love to hear from you</h1>
+      <input type="text" placeholder="Your Name" class="an" name="name" #name="ngModel" ngModel required minlength="5">
+      <div class="alert alert-danger" role="alert" [ngStyle]="{height: '35px',borderRadius:'3px'}" *ngIf=" name.touched && name.errors">
+        Invalid Name
+      </div>
+      <input type="email" placeholder="E-mail" class="an" email ngModel #email="ngModel" name="email" required minlength="10">
+      <div class="alert alert-danger" role="alert" [ngStyle]="{height: '35px',borderRadius:'3px'}" *ngIf="name.touched && name.errors">
+        Invalid e-mail
+      </div>
+      <input type="text" placeholder="Subject" class="an" name="subject" ngModel #subject="ngModel" required minlength="10">
+      <div class="alert alert-danger" role="alert" [ngStyle]="{height: '35px',borderRadius:'3px'}" *ngIf="name.touched && name.errors">
+      Invalid Subject
+      </div>
+      <input type="text" placeholder="Your Message" class="in" [ngStyle]="{
+        paddingRight:'10px'
+      }" name="message" #message="ngModel" ngModel>
+      <div class="alert alert-danger" role="alert" [ngStyle]="{height: '35px',borderRadius:'3px'}" *ngIf="name.touched && name.errors">
+      Invalid Message
+      </div>
+      <div class="btn btn-success d-flex justify-content-center align-items-center" type="Submit"><button class="bg-success" [ngStyle]="{border:'none',color:'white'}" type="submit"> Submit</button></div>
+    </form>
+    <div class="p32">
+      <div class="p d-flex">
+        <div class="p1">
+          <img src="../../assets/people/1.png" alt="Erreur">
+        </div>
+        <div class="p2">
+          <h3>John Doe</h3>
+          <p>Senior Marketing Manager</p>
+          <p>Phone:+000 123 000 77 88</p>
+          <p>Email: contact@example.com</p>
+        </div>
+      </div>
+      <div class="p d-flex">
+        <div class="p1">
+          <img src="../../assets/people/2.png" alt="Erreur">
+        </div>
+        <div class="p2">
+          <h3>William Smith</h3>
+          <p>Senior Marketing Manager</p>
+          <p>Phone:+000 123 000 77 88</p>
+          <p>Email: contact@example.com</p>
+        </div>
+      </div>
+      <div class="p d-flex">
+        <div class="p1">
+          <img src="../../assets/people/3.png" alt="erreur">
+        </div>
+        <div class="p2">
+          <h3>Emma Stone</h3>
+          <p>Senior Marketing Manager</p>
+          <p>Phone:+000 123 000 77 88</p>
+          <p>Email: contact@example.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
